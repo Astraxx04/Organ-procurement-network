@@ -11,7 +11,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #161623;
+  background-color: #eaebed;
+  
   }
   .flex {
     display: flex;
@@ -23,8 +24,8 @@ body {
     width: 100%;
     height: 80px;
     position: relative;
-    background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(5rem);
+    background: hsl(0 0% 100% / 0.05);
+    backdrop-filter: blur(1rem);
     align-items: center;
   }
   
@@ -38,7 +39,7 @@ body {
   }
   
   .logo h1 {
-    color: whitesmoke;
+    color: black;
     height: 100%;
     font-size: 35px;
     font-family: "Montserrat";
@@ -52,14 +53,14 @@ body {
   }
   
   .primary-navigation{
-    background: hsl(0 0% 100% / 0.1);
+    background: hsl(0 0% 100% / 0.15);
     backdrop-filter: blur(5rem);
     padding: 1rem;
     margin-right: 5rem;
     border-radius: 11px;
   }
   nav li a {
-    color: whitesmoke;
+    color: black;
     height: 100%;
     font-size: 16px;
     font-family: "Montserrat";
@@ -79,8 +80,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,129,152,1) 36%, rgba(42,103,147,1) 71%, rgba(0,212,255,1) 96%);
+    background: rgb(140,203,219);
+    background: linear-gradient(90deg, rgba(140,203,219,1) 0%, rgba(140,203,219,1) 6%, rgba(169,204,230,1) 75%, rgba(143,217,232,1) 96%);
     clip-path: circle(40% at right 70%);
   }
   section::after {
@@ -90,8 +91,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,129,152,1) 36%, rg
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,129,152,1) 36%, rgba(42,103,147,1) 71%, rgba(0,212,255,1) 96%);
+    background: rgb(140,203,219);
+    background: linear-gradient(90deg, rgba(140,203,219,1) 0%, rgba(140,203,219,1) 6%, rgba(169,204,230,1) 75%, rgba(143,217,232,1) 96%);
     clip-path: circle(40% at 10% 10%);
   }
   
@@ -129,6 +130,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,129,152,1) 36%, rg
   .container .card:hover .content {
     opacity: 1;
     transform: translateY(-20px);
+    cursor: pointer;
   }
 
   .container .card .icon
@@ -138,13 +140,28 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,129,152,1) 36%, rg
   }
   
   .container .card .content .contentBx h3 {
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 22px;
     text-align: center;
     margin: 20px 0 10px;
     line-height: 1.1em;
+  }
+  ::-webkit-scrollbar {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 0.25em;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 11px;
+    background: rgba(26, 24, 24, 0.5);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(0 0 100% / 0.15);
   }
